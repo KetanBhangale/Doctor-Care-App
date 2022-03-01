@@ -11,23 +11,24 @@ The app is demo app and it use firebase firestore as cloud storage. All the data
 
 Technologies Used:
 
-1. fragments 
-2. firebase 
-3. google 
-4. recyclerview
-5. dependency-injection
-6. kotlin-android
-7. gson
-8. viewpager
-9. mvvm-architecture
-10. Adapter-pattern
-11. kotlin-coroutines
-12. firebasestorage
-13. navigation-architecture-component
-14. jetpack-android
-15. livedata-viewmodel
-16. dagger-hilt
-17. viewbinding-android
+1. MVVM
+2. Fragments 
+3. Firebase 
+4. Google 
+5. Recyclerview
+6. Dependency-Injection
+7. Kotlin-android
+8. Gson
+9. Viewpager
+10. Repository-pattern
+11. Adapter-pattern
+12. Kotlin-coroutines
+13. Firebasestorage
+14. Navigation-architecture-component
+15. Jetpack-android
+16. Livedata-viewmodel
+17. Dagger-hilt
+18. Viewbinding-android
 
 
 Apps Screenshots:
