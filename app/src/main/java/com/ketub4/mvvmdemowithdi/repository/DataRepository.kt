@@ -10,9 +10,9 @@ import com.ketub4.mvvmdemowithdi.network.FirebaseService
 import javax.inject.Inject
 
 
-class MovieRepository @Inject constructor(private val apiService: APIService,
-                                          private val firebaseDB: FirebaseFirestore,
-                                          private val context: Context
+class DataRepository @Inject constructor(private val apiService: APIService,
+                                         private val firebaseDB: FirebaseFirestore,
+                                         private val context: Context
 
 ) {
 

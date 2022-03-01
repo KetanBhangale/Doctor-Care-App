@@ -5,16 +5,13 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.ketub4.mvvmdemowithdi.model.*
-import com.ketub4.mvvmdemowithdi.network.FirebaseService
-import com.ketub4.mvvmdemowithdi.repository.MovieRepository
+import com.ketub4.mvvmdemowithdi.repository.DataRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class CustomViewModel @Inject constructor(private val repository: MovieRepository) :ViewModel() {
+class CustomViewModel @Inject constructor(private val repository: DataRepository) :ViewModel() {
 
     private var _movieList =MutableLiveData<List<Result>>()
     val movieList: LiveData<List<Result>> get()= _movieList
