@@ -9,6 +9,27 @@ A complete app having following feature:
 
 The app is demo app and it use firebase firestore as cloud storage. All the data is dummy data fetched from firestore.
 
+Technologies Used:
+
+1. fragments 
+2. firebase 
+3. google 
+4. recyclerview
+5. dependency-injection
+6. kotlin-android
+7. gson
+8. viewpager
+9. mvvm-architecture
+10. Adapter-pattern
+11. kotlin-coroutines
+12. firebasestorage
+13. navigation-architecture-component
+14. jetpack-android
+15. livedata-viewmodel
+16. dagger-hilt
+17. viewbinding-android
+
+
 Apps Screenshots:
 
 <div align="center">
