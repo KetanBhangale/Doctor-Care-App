@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_shape_green"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+   >
+
+    <TextView
+        android:id="@+id/appoint_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9.30"
+        android:gravity="center"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/background_shape_white"
+        android:textColor="@color/basicGreen"
+        android:textSize="16sp"
+        android:textStyle="bold"
+
+        />
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basicGray">
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar_main"
+         />
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardMaxElevation="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="8dp"
+    android:layout_below="@+id/app_bar"
+    android:background="@color/white">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AppointmentDetailsActivity"
+    android:background="@color/white">
+
+
+    <include
+        android:id="@+id/doctor_details"
+        layout="@layout/appointment_activity_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_details"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doctor_details"
+            android:text="Please Fill Your Details"
+            android:textColor="@color/basicBlue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doctor_details"
+            android:hint="Name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:padding="20dp"
+            android:inputType="textCapSentences"
+            android:backgroundTint="@color/basicGreen"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doctor_details"
+            android:hint="Phone Number"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/basicGreen"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:padding="20dp"
+            android:inputType="phone"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doctor_details"
+            android:hint="Email"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/basicGreen"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:padding="20dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doctor_details"
+            android:hint="Comment"
+            android:inputType="textMultiLine|textCapSentences"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:lines="4"
+            android:gravity="left|top"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="false"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/basicGreen"
+            android:textSize="16sp"
+            android:textStyle="normal"
+
+            android:padding="20dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+    <Button
+        android:id="@+id/DoneBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_gravity="bottom"
+        android:padding="15dp"
+        android:backgroundTint="@color/basicGreen"
+        android:layout_margin="15dp"/>
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

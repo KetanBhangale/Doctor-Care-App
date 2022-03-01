@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="20dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/category_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/doc_m1"
+       app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/inner_layout"
+        app:layout_constraintBottom_toBottomOf="@+id/inner_layout"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/inner_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintLeft_toRightOf="@+id/category_image"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/doctor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="General"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+           app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/category_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="10dp"
+            android:text="General"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/doctor_name"
+
+            />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+
+            android:paddingRight="10dp"
+            android:text="General"
+            android:textSize="15sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/doctor_name"
+
+            />
+
+        <ImageView
+            android:id="@+id/locationImg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/general"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/category_name" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintWidth_percent="0.9"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:text="kkasjdlksasfsdfdssdfsdfsdsdfdsfsdsdfdsfsdfsdsdfdsfdsfsdfsdfdsfdsfdsfdssdfsdfd"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toRightOf="@+id/locationImg"
+            app:layout_constraintTop_toTopOf="@+id/locationImg"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locationImg">
+
+            <ImageView
+                android:id="@+id/rate1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/start_filled" />
+
+            <ImageView
+                android:id="@+id/rate2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/start_filled" />
+
+            <ImageView
+                android:id="@+id/rate3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/start_filled" />
+
+            <ImageView
+                android:id="@+id/rate4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/start" />
+
+            <ImageView
+                android:id="@+id/rate5"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/start" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

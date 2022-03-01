@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Doctor Care App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Home Fragment</string>
+    <string name="doctor_care">Doctor Care</string>
+    <string name="care_for_yourself_family_get_a_good_doctor"><![CDATA[Care for yourself & family, Get a Good Doctor!!!]]></string>
+    <string name="menu_home">Home</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="notifications">Notifications</string>
+    <string name="profile">Profile</string>
+    <string name="search_fragment">Search Fragment</string>
+    <string name="notification_fragment">Notification Fragment</string>
+    <string name="profile_fragment">Profile Fragment</string>
+
+</resources>

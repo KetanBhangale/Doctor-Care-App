@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardMaxElevation="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="8dp"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/previous"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/previous"
+        app:tint="@android:color/darker_gray"
+        android:paddingBottom="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/pageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/pageTitleImage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/morning"
+            app:tint="@color/basicOrange" />
+
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pageTitleImage"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="Morning"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/next_new"
+        app:tint="@android:color/darker_gray"
+        android:paddingBottom="5dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pageLayout"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="?actionBarSize"/>
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

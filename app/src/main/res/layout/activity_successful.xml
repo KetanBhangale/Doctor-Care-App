@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basicGray">
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar_main"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardMaxElevation="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="8dp"
+        android:layout_below="@+id/app_bar"
+        android:background="@color/white">
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".activities.AppointmentDetailsActivity"
+                android:background="@color/white">
+           <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+               android:gravity="center">
+
+               <ImageView
+                   android:layout_width="90dp"
+                   android:layout_height="90dp"
+                   android:src="@drawable/success"
+                   android:scaleType="centerCrop"
+                   android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:id="@+id/successText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/doctor_details"
+                        android:text="Appointment Confirmed"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="7dp"/>
+               <TextView
+                   android:id="@+id/successSubText"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/doctor_details"
+                   android:text="Your appointment has been confirmed. Please be on time."
+                   android:textAlignment="center"
+                   android:textSize="14sp"
+                   android:textStyle="bold" />
+
+                </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/homeBtn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/home"
+            android:layout_gravity="center_horizontal|bottom"
+            android:padding="15dp"
+
+            app:tint="@color/basicBlue" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
