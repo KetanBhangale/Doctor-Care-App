@@ -1,4 +1,4 @@
-# Doctor-Care-App-Demo
+# Doctor-Care-App-Demo - MVVM Architecture
 
 A complete app having following feature:
 1. List of all types of doctors near by your location.
